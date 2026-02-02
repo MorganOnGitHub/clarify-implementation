@@ -1,0 +1,32 @@
+{
+  "args": {
+    "output_dir": "../model/model",
+    "num_train_epochs": 2,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "evaluation_strategy": "epoch",
+    "disable_tqdm": false
+  },
+  "args1":{
+    "output_dir": "../model/model1",
+    "num_train_epochs": 3,
+    "learning_rate": 3e-5,
+    "per_device_train_batch_size": 32,
+    "per_device_eval_batch_size": 32,
+    "weight_decay": 0.01,
+    "evaluation_strategy": "epoch",
+    "disable_tqdm": false
+  },
+  "args2":{
+    "output_dir": "../model/model2",
+    "num_train_epochs": 4,
+    "learning_rate": 5e-5,
+    "per_device_train_batch_size": 8,
+    "per_device_eval_batch_size": 8,
+    "weight_decay": 0.01,
+    "evaluation_strategy": "epoch",
+    "disable_tqdm": false
+  }
+}
