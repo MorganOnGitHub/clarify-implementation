@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 from sklearn.model_selection import train_test_split
 
-PROHIBITED_SYMBOLS = ['$', '%', '#', '@', '!', '^', '&', '*', '(', ')', '-', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', "'", '<', '>', ',', '.', '?', '/','~','`', ',', '…', '“', '”', '‘', '’', '—', '–']
+# PROHIBITED_SYMBOLS = ['$', '%', '#', '@', '!', '^', '&', '*', '(', ')', '-', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', "'", '<', '>', ',', '.', '?', '/','~','`', ',', '…', '“', '”', '‘', '’', '—', '–']
 
 
 os.makedirs("../datasets", exist_ok=True)
@@ -23,9 +23,9 @@ def normalization(true_df, fake_df):
         df['text'] = df['text'].str.lower()
         df['title'] = df['title'].str.lower()
 
-        for char in PROHIBITED_SYMBOLS:
-            df['text'] = df['text'].str.replace(char, " ", regex=False)
-            df['title'] = df['title'].str.replace(char, " ", regex=False)
+        # for char in PROHIBITED_SYMBOLS:
+        #     df['text'] = df['text'].str.replace(char, " ", regex=False)
+        #     df['title'] = df['title'].str.replace(char, " ", regex=False)
 
     return true_df, fake_df
 

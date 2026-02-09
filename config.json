@@ -1,32 +1,92 @@
 {
-  "args": {
-    "output_dir": "../model/model",
-    "num_train_epochs": 2,
+  "args_baseline": {
+    "output_dir": "../model/baseline",
+    "num_train_epochs": 3,
     "learning_rate": 2e-5,
     "per_device_train_batch_size": 16,
     "per_device_eval_batch_size": 16,
     "weight_decay": 0.01,
-    "evaluation_strategy": "epoch",
     "disable_tqdm": false
   },
-  "args1":{
-    "output_dir": "../model/model1",
+  "args_lr_low": {
+    "output_dir": "../model/lr_low",
     "num_train_epochs": 3,
-    "learning_rate": 3e-5,
-    "per_device_train_batch_size": 32,
-    "per_device_eval_batch_size": 32,
+    "learning_rate": 5e-6,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
     "weight_decay": 0.01,
-    "evaluation_strategy": "epoch",
     "disable_tqdm": false
   },
-  "args2":{
-    "output_dir": "../model/model2",
-    "num_train_epochs": 4,
+  "args_lr_med": {
+    "output_dir": "../model/lr_high",
+    "num_train_epochs": 3,
     "learning_rate": 5e-5,
-    "per_device_train_batch_size": 8,
-    "per_device_eval_batch_size": 8,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
     "weight_decay": 0.01,
-    "evaluation_strategy": "epoch",
+    "disable_tqdm": false
+  },
+  "args_lr_high": {
+    "output_dir": "../model/lr_very_high",
+    "num_train_epochs": 3,
+    "learning_rate": 1e-4,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "disable_tqdm": false
+  },
+  "args_bs_small": {
+    "output_dir": "../model/bs_small",
+    "num_train_epochs": 3,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 8,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "disable_tqdm": false
+  },
+  "args_bs_large": {
+    "output_dir": "../model/bs_large",
+    "num_train_epochs": 3,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 32,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "disable_tqdm": false
+  },
+  "args_epochs_short": {
+    "output_dir": "../model/epochs_short",
+    "num_train_epochs": 3,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "disable_tqdm": false
+  },
+  "args_epochs_long": {
+    "output_dir": "../model/epochs_long",
+    "num_train_epochs": 10,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.01,
+    "disable_tqdm": false
+  },
+  "args_wd_none": {
+    "output_dir": "../model/wd_none",
+    "num_train_epochs": 3,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.0,
+    "disable_tqdm": false
+  },
+  "args_wd_high": {
+    "output_dir": "../model/wd_high",
+    "num_train_epochs": 3,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 16,
+    "weight_decay": 0.1,
     "disable_tqdm": false
   }
 }
