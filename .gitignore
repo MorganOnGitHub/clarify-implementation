@@ -3,3 +3,4 @@ datasets/*
 results/*
 model/*
 .env
+ocr/examples/*
