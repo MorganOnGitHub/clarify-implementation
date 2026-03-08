@@ -1,0 +1,8 @@
+**/*
+!app.py
+!model.py
+!requirements.txt
+# Just baseline checkpoints for now, not the whole model directory
+!model/baseline/*
+!ocr/EasyOCR.py
+!preprocessing/preprocess.py
