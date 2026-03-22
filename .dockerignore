@@ -3,6 +3,7 @@
 !model.py
 !requirements.txt
 # Just baseline checkpoints for now, not the whole model directory
-!model/baseline/*
+!model/baseline/checkpoint-1512/
+!model/baseline/checkpoint-1512/**
 !ocr/EasyOCR.py
 !preprocessing/preprocess.py

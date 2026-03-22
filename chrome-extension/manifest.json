@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Infolytic Search Badge",
+  "version": "1.0",
+  "description": "Annotates Google search results with misinformation confidence badges.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com/search*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://infolytic.surf/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
